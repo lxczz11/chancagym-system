@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  background-color: white;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  #ffffff;
+  
+}
+.nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-right: 40px; 
+}
+
+.nav-links a {
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-decoration:none;
+  font-size:1.1rem;
+}
+
+.nav-links a:hover {
+  color: #ff5e00;
+}
+
+.logo {
+  font-family: 'Bungee', cursive;
+  font-size: 2.5rem;
+  color: #ff5e00;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left:30px
+}
+.logo a {
+  text-decoration: none;   
+  color: #ff5e00;         
+}
+
+
+/* Main y planes */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 20px;
+}
+
+.plan {
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Animación tipo "agua" */
+.plan::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 50% 50%, rgba(255,94,0,0.4), transparent 70%);
+    animation: wave 8s infinite linear;
+    z-index: 0;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg) translate(0,0);}
+    50% { transform: rotate(45deg) translate(50px,50px);}
+    100% { transform: rotate(0deg) translate(0,0);}
+}
+
+.plan-contenido {
+    position: relative;
+    z-index: 1;
+}
+
+.plan h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.plan .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff5e00;
+}
+
+.plan button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff5e00;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.plan button:hover {
+    background-color: #000000;
+}
+
+
+.hermanito {
+    background: linear-gradient(90deg, #ff5e00, #ff8a3d); /* naranja degradado */
+}
+
+.opulencia {
+    background: linear-gradient(90deg, #ffa500, #ffd700); /* dorado degradado */
+}
+
+.maceta-pulpin {
+    background: linear-gradient(90deg, #00bfff, #1e90ff); /* azul degradado */
+}
+
+.vip-maceta {
+    background: linear-gradient(90deg, #000000, #333333); /* negro degradado */
+    color: #ffffff; /* texto blanco para contraste */
+}
+
+

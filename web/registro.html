@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title> ChancaGym </title>
+  <link rel="stylesheet" href="css/Registro.css" />
+    <link rel="stylesheet" href="css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+<header >
+    
+      <nav class="navbar">
+          <h1 class="logo"><a href="index.html"> ChancaGym </a></h1>
+        <ul class="nav-links">
+          <li><a href="navLinkInicio.html">Inicio</a></li>
+          <li><a href="#">Planes</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+        <div class="contenedor-principal">
+            <div class="contenedor-registro">
+                <h2>Regístrate aquí Maceta</h2>
+                    <form action="registrar" method="POST">
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres completos" required />
+
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellido" placeholder="Apellidos completos" required />
+                    
+                    <label for="dni"> Dni </label>
+                    <input type="text" id="dni" name="dni" placeholder="Dni , CE o Pasaporte " required />
+                    
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="+51" required>
+
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" required />
+
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="correo" placeholder="correo@ejemplo.com" required />
+
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="********" required />
+      
+                    <button type="submit" class="boton" >Crear Cuenta</button>
+                    
+                    
+                    </form>
+
+                    <p>¿Ya tienes cuenta? <a href="InicioSesion.html">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+</header>
+
+<footer class="footer">
+    <div class="footer-logo">
+      <img src="img/logoChancaGym.png" alt="Logo ChancaGym">
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/es-419/"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.tiktok.com/es-419/"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>ChancaGym</h4>
+        <ul>
+          <li><a href="#">¿Quiénes somos?</a></li>
+          <li><a href="#">Contáctanos</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Libro de reclamaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Planes</h4>
+        <ul>
+          <li><a href="#">Conoce nuestros planes</a></li>
+          <li><a href="#">ChancaCoach</a></li>
+          <li><a href="#">Documentos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Soporte</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-copy">
+      &copy; 2025 ChancaGym. Todos los derechos reservados.
+    </div>
+  </footer>
+    
+<script>
+if (window.location.search.includes("error")) {
+    const msg = document.createElement("p");
+    msg.textContent = "Ya existe un usuario con ese correo, DNI o teléfono.";
+    msg.style.color = "red";
+    msg.style.textAlign = "center";
+    msg.style.marginTop = "9px";
+    document.querySelector("form").after(msg);
+    
+}
+</script>
+
+</body>
+</html>

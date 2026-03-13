@@ -1,0 +1,154 @@
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+.navbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 25px 20px;
+  max-width: 1200px;
+  margin:  0 auto;
+  overflow: hidden;
+}
+
+.logo a{
+    text-decoration:none;
+    color: #ff5e00;  
+    font-family: 'Bungee', cursive;
+    font-size: 2.5rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap; 
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 20px;
+  
+  
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+  font-size:1.1rem;
+  
+}
+
+.nav-links a:hover {
+  color: #ff5e00;
+}
+
+.contenedor-principal {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh;
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+
+.contenedor-registro {
+  background-color: #fff;
+  color: #000;
+  padding: 60px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transform: scale(1.05);
+}
+
+.contenedor-registro h2 {
+  font-family: 'Bungee', cursive;
+  color: #ff5e00;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contenedor-registro label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size:1.1rem;
+  
+}
+
+.contenedor-registro input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #f1f1f1;
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+.contenedor-registro input:focus {
+  outline: 2px solid #ff5e00;
+  background: #fff;
+}
+
+.boton {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #ff5e00, #ff8a3d);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton:hover {
+  transform: scale(1.05);
+}
+
+.contenedor-registro p {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.contenedor-registro a {
+  color: #ff5e00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .contenedor-registro {
+    padding: 30px 20px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .contenedor-registro h2 {
+    font-size: 1.6rem;
+  }
+
+  .boton {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
